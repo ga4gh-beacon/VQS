@@ -1,0 +1,17 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+name: VRSidRequest
+description: |-
+  Request profile for variants matching the computed digest of a variant of interest.
+type: object
+properties:
+  requestProfile:
+    const: VRSidRequest
+  VRSidentifier:
+    $ref: "../common/requestParameterComponents.yaml#/$defs/VRSid"
+required:
+  - requestProfile
+  - VRSid
+additionalProperties: false
+examples:
+  $ref: "../examples/VRSidRequests.yaml"
+

@@ -1,0 +1,7 @@
+- description: |-
+    Request for any variant associated with TP53, by position or annotation. The
+    interpretation (e.g. position overlap) is left to the beacon.
+  GET: "?requestProfile=GeneIdRequest&geneId=TP53"
+  POST: 
+    requestProfile: GeneIdRequest
+    geneId: TP53

@@ -1,0 +1,23 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+name: GeneIdRequest
+description: |-
+  Request profile for variants associated with the given gene id. The format
+  of the gene id is not defined but the use of HUGO gene symbols is *strongly*
+  recommended.
+  In its initial design this request profile allows the use of additional parameters
+  in line with the Beacon v2 use.
+  TODO: Evaluate the definition of specialized requests with fixed additional
+  parameters such as VRS `type` or CNV type (`copyChange`).
+type: object
+properties:
+  requestProfile:
+    const: GeneIdRequest
+  geneId:
+    $ref: "../common/requestParameterComponents.yaml#/$defs/GeneId"
+required:
+  - requestProfile
+  - geneId
+additionalProperties: true
+examples:
+  $ref: "../examples/GeneIdRequests.yaml"
+

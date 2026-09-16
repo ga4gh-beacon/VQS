@@ -1,0 +1,27 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+description: >-
+  Component definitions for request profiles. The definition of each parameter
+  as a component allows for reuse across multiple request patterns but also for
+  e.g. easy referencing in OpenAPI endpoints.
+
+$defs:
+  VRSid:
+    description: |-
+      VRS identifiers are globally unique identifiers computed from a VRS object
+      itself. Their structure is `"ga4gh" ":" type_prefix "." <digest>`.
+    type: string
+    examples:
+      - ga4gh:VA.0AePZIWZUNsUlQTamyLrjm2HWUw2opLt_
+      - a4gh:SL.PSndOxWMoEj70vW--2MI2GiZmflP6nfL
+
+  GeneId:
+    description: |-
+      * A gene identifier
+      * It is strongly suggested to use a symbol following
+        the HGNC (https://www.genenames.org) nomenclature.
+    type: string
+    examples:
+      - BRAF
+      - SCN5A
+
+
