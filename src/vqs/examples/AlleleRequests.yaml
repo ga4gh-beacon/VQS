@@ -1,0 +1,9 @@
+- description: |-
+    Request for the SNV resulting in the BRAF V600E modification using genomic
+    coordinates and the result of the base substitution.
+  GET: "?requestProfile=AlleleRequest&referenceAccession=refseq:NC_0000017.11&start=140753335&sequence=T"
+  POST: 
+    requestProfile: AlleleRequest
+    referenceAccession: refseq:NC_0000017.11
+    start: 140753335
+    sequence: T
