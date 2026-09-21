@@ -1,0 +1,14 @@
+{
+    "examples": [
+        {
+            "GET": "?requestProfile=AlleleRequest&referenceAccession=refseq:NC_0000017.11&start=140753335&sequence=T",
+            "POST": {
+                "referenceAccession": "refseq:NC_0000017.11",
+                "requestProfile": "AlleleRequest",
+                "sequence": "T",
+                "start": 140753335
+            },
+            "description": "Request for the SNV resulting in the BRAF V600E modification using genomic\ncoordinates and the result of the base substitution."
+        }
+    ]
+}

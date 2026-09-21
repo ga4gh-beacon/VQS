@@ -1,0 +1,37 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "additionalProperties": true,
+    "description": "...",
+    "examples": {
+        "$ref": "../examples/CopyChangeRequests.json"
+    },
+    "name": "CopyChangeRequest",
+    "properties": {
+        "copyChange": {
+            "$ref": "./requestParameterComponents.json#/$defs/CopyChange"
+        },
+        "end": {
+            "$ref": "./requestParameterComponents.json#/$defs/SequenceEnd"
+        },
+        "referenceAccession": {
+            "$ref": "./requestParameterComponents.json#/$defs/RefgetAccession"
+        },
+        "requestProfile": {
+            "const": "CopyChangeRequest"
+        },
+        "start": {
+            "$ref": "./requestParameterComponents.json#/$defs/SequenceStart"
+        },
+        "vrsType": {
+            "const": "CopyNumberChange"
+        }
+    },
+    "required": [
+        "requestProfile",
+        "referenceAccession",
+        "start",
+        "end",
+        "copyChange"
+    ],
+    "type": "object"
+}

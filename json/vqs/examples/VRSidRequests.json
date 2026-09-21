@@ -1,0 +1,12 @@
+{
+    "examples": [
+        {
+            "GET": "?requestProfile=VRSidRequest&VRSid=ga4gh:SL.PSndOxWMoEj70vW--2MI2GiZmflP6nfL",
+            "POST": {
+                "VRSid": "ga4gh:SL.PSndOxWMoEj70vW--2MI2GiZmflP6nfL",
+                "requestProfile": "VRSidentifierRequest"
+            },
+            "description": "Request for a genomic location using a VRS sequence location (SL) identifier."
+        }
+    ]
+}

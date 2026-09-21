@@ -1,0 +1,12 @@
+{
+    "examples": [
+        {
+            "GET": "?requestProfile=GeneIdRequest&geneId=TP53",
+            "POST": {
+                "geneId": "TP53",
+                "requestProfile": "GeneIdRequest"
+            },
+            "description": "Request for any variant associated with TP53, by position or annotation. The\ninterpretation (e.g. position overlap) is left to the beacon."
+        }
+    ]
+}

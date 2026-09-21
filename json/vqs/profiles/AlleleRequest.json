@@ -1,0 +1,36 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "additionalProperties": true,
+    "description": "A Beaconsequence query. It is in its scope similar to the Beacon v1/v2\nallele requests but replaces the original parameters with VRS concepts.\n\nTODO: make `end` mandatory?",
+    "examples": {
+        "$ref": "../examples/AlleleRequests.json#examples"
+    },
+    "name": "AlleleRequest",
+    "properties": {
+        "end": {
+            "$ref": "./requestParameterComponents.json#/$defs/SequenceEnd"
+        },
+        "referenceAccession": {
+            "$ref": "./requestParameterComponents.json#/$defs/RefgetAccession"
+        },
+        "requestProfile": {
+            "const": "AlleleRequest"
+        },
+        "sequence": {
+            "$ref": "./requestParameterComponents.json#/$defs/Sequence"
+        },
+        "start": {
+            "$ref": "./requestParameterComponents.json#/$defs/SequenceStart"
+        },
+        "vrsType": {
+            "const": "Allele"
+        }
+    },
+    "required": [
+        "requestProfile",
+        "referenceAccession",
+        "start",
+        "sequence"
+    ],
+    "type": "object"
+}

@@ -27,5 +27,5 @@ required:
 
 additionalProperties: true
 examples:
-  $ref: "../examples/AlleleRequests.yaml"
+  $ref: "../examples/AlleleRequests.yaml#examples"
 
