@@ -28,7 +28,7 @@ $defs:
       - VQS
     oneOf:
       - integer
-      - $ref: "#/$defs/Range"
+      - $ref: "#/$defs/SequenceRange"
 
   AdjacencyEnd:
     description: |-
@@ -44,7 +44,7 @@ $defs:
       - VQS
     oneOf:
       - integer
-      - $ref: "#/$defs/Range"
+      - $ref: "#/$defs/SequenceRange"
 
   AminoacidChange:
     description: |-
@@ -133,7 +133,6 @@ $defs:
       * `SO:0000605` for intergenic variants
 
       Note: While genes are features in SO they have a distinct parameter `geneId`.
-
     type: string
 
   GenomicAlleleShortForm:
@@ -166,7 +165,7 @@ $defs:
       - SO:0001580
       - SO:0001587
 
-  Range:
+  SequenceRange:
     description: |-
       An array of 2 integer values. If referring to sequence positions the
       "0-based, inclusive" format is used.
@@ -206,7 +205,7 @@ $defs:
       - VQS
     oneOf:
       - integer
-      - $ref: "#/$defs/Range"
+      - $ref: "#/$defs/SequenceRange"
 
   RequestProfileId:
     description: |-
@@ -252,7 +251,7 @@ $defs:
       - VQS
     oneOf:
       - integer
-      - $ref: "#/$defs/Range"
+      - $ref: "#/$defs/SequenceRange"
 
   SequenceStart:
     description: |-
@@ -262,7 +261,7 @@ $defs:
       - VQS
     oneOf:
       - integer
-      - $ref: "#/$defs/Range"
+      - $ref: "#/$defs/SequenceRange"
 
   SequenceEnd:
     description: |-
@@ -272,7 +271,7 @@ $defs:
       - VQS
     oneOf:
       - integer
-      - $ref: "#/$defs/Range"
+      - $ref: "#/$defs/SequenceRange"
 
   VariantId:
     description: |-
